@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="pr-8 max-w-2xl bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-lg">
                     <h3 className="text-3xl font-bold text-slate-700 dark:text-slate-300 mb-8">Get in Touch</h3>
                     <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-12">
-                        Have questions or want to learn more about our programs? We&apos;re here to help!
+                        Have questions or want to learn more about our programs? We&rsquo;re here to help!
                     </p>
                 </div>
 
