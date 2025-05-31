@@ -1,9 +1,18 @@
 import Image from "next/image";
+import { HeroSectionOne } from "../../components/Hero";
+import Footer from "../../components/Footer";
+import Contact from "../../components/Contact";
 
 export default function Home() {
+
   return (
     <main>
-      <h1>Hello</h1>
+      <HeroSectionOne />
+      
+      <Contact/>
+
+      <Footer/>
+      
     </main>
   );
 }
