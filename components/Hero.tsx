@@ -1,10 +1,9 @@
 "use client";
 
-
 import { motion } from "motion/react";
-import router from "next/router";
 import { TextHoverEffect } from "../components/ui/text-hover-effect";
 import Link from "next/link";
+import ProgramsComponets from "./Programs";
 
 export function HeroSectionOne() {
   return (
@@ -52,7 +51,7 @@ export function HeroSectionOne() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Whether you're looking to lose weight, gain muscle, or improve your overall health, 
+          Whether you're looking to lose weight, gain muscle, or improve your overall health,
           we're here to guide every step of your fitness journey.
         </motion.p>
         <motion.div
@@ -101,9 +100,36 @@ export function HeroSectionOne() {
           </div>
         </motion.div>
       </div>
-      <div className="h-[40rem] flex items-center justify-center">
+      <div className="h-[20rem] flex items-center justify-center">
         <TextHoverEffect text="FT.NESS" />
       </div>
+
+
+
+      <section id="about" className="px-4 py-4 md:py-20 dark:text-slate-300">
+        <h2 className="text-center text-2xl font-bold  dark:text-slate-300 text-slate-700 lg:text-6xl">About Us</h2>
+
+        <div className="mt-8 max-w-4xl mx-auto border-4 rounded-2xl p-4 border-neutral-200 dark:border-neutral-800 pb-8 shadow-lg shadow-blue-400 hover:shadow-2xl transition-shadow duration-300">
+          <p className="font-bold my-4 text-2xl">Who We Are:</p>
+          <p className="text-lg text-neutral-600 dark:text-neutral-400 px-8">
+            At FT.NESS, we're more than just a gym — we're a community. Our certified personal trainers,
+            nutrition coaches, and wellness experts are passionate about helping you achieve sustainable
+            results through personalized fitness plans, expert guidance, and continuous motivation.
+          </p>
+        </div>
+
+        <div className="mt-16 max-w-4xl mx-auto border-4 rounded-2xl p-4 border-neutral-200 dark:border-neutral-800 pb-8 shadow-lg shadow-blue-400 hover:shadow-2xl transition-shadow duration-300">
+          <p className="font-bold my-4 text-2xl">Our Mission:</p>
+          <p className="text-lg text-neutral-600 dark:text-neutral-400 px-8">
+            To inspire and empower individuals to lead healthier, stronger lives through science-based
+            training and holistic wellness solutions.
+          </p>
+        </div>
+
+      </section>
+
+      <ProgramsComponets />
+
     </div>
   );
 }
@@ -112,11 +138,15 @@ const Navbar = () => {
   return (
     <nav className="flex w-full items-center justify-between border-t border-b border-neutral-200 px-4 py-4 dark:border-neutral-800">
       <div className="flex items-center gap-2">
-        <div className="size-7 rounded-full bg-gradient-to-br from-violet-500 to-pink-500" />
+        <img src="/logo.png" className="size-7 rounded-full" alt="logo image" />
         <h1 className="text-base font-bold md:text-2xl">FT.NESS</h1>
       </div>
-      <Link href="/login" className="w-24 transform rounded-lg bg-black px-6 py-2 text-center font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 md:w-32 dark:bg-white dark:text-black dark:hover:bg-gray-200">Login
-      </Link>
+      <div>
+        <Link href="/#about" className="w-24 transform rounded-lg px-6 py-2 text-center font-medium text-white transition-all duration-300 hover:-translate-y-0.5 md:w-32 dark:text-white max-md:hidden ">About</Link>
+        <Link href="/#programs" className="w-24 transform rounded-lg px-6 py-2 text-center font-medium text-white transition-all duration-300 hover:-translate-y-0.5 md:w-32 dark:text-white pr-12 max-md:hidden ">Programs</Link>
+        <Link href="/login" className="w-24 transform rounded-lg bg-black px-6 py-2 text-center font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 md:w-32 dark:bg-white dark:text-black dark:hover:bg-gray-200">Login
+        </Link>
+      </div>
     </nav>
   );
 };
