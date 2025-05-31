@@ -25,7 +25,7 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <form className="max-w-md mx-auto space-y-6">
+                <form className="max-w-md mx-auto lg:pl-8 space-y-6">
                     <input
                         type="text"
                         placeholder="Your Name"
