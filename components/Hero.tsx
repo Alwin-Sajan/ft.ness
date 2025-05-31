@@ -51,8 +51,8 @@ export function HeroSectionOne() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Whether you're looking to lose weight, gain muscle, or improve your overall health,
-          we're here to guide every step of your fitness journey.
+          Whether you&apos;re looking to lose weight, gain muscle, or improve your overall health,
+          we&apos;re here to guide every step of your fitness journey.
         </motion.p>
         <motion.div
           initial={{
@@ -112,7 +112,7 @@ export function HeroSectionOne() {
         <div className="mt-8 max-w-4xl mx-auto border-4 rounded-2xl p-4 border-neutral-200 dark:border-neutral-800 pb-8 shadow-lg shadow-blue-400 hover:shadow-2xl transition-shadow duration-300">
           <p className="font-bold my-4 text-2xl">Who We Are:</p>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 px-8">
-            At FT.NESS, we're more than just a gym — we're a community. Our certified personal trainers,
+            At FT.NESS, we&apos;re more than just a gym — we&apos;re a community. Our certified personal trainers,
             nutrition coaches, and wellness experts are passionate about helping you achieve sustainable
             results through personalized fitness plans, expert guidance, and continuous motivation.
           </p>
