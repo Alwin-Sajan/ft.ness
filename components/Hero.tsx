@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "motion/react";
-import { TextHoverEffect } from "../components/ui/text-hover-effect";
 import Link from "next/link";
 import ProgramsComponets from "./Programs";
+import MemershipType from "./MembershipType";
 
 export function HeroSectionOne() {
   return (
@@ -89,7 +89,12 @@ export function HeroSectionOne() {
           }}
           className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
         >
-          <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
+          <motion.div
+            initial={{ scale: 0.5,opacity: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
             <img
               src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CQF3KSWZ4ML64HHLQMQKZPR5NI.jpg"
               alt="Landing page preview"
@@ -97,16 +102,16 @@ export function HeroSectionOne() {
               height={1000}
               width={1000}
             />
-          </div>
+          </motion.div>
         </motion.div>
       </div>
-      <div className="h-[20rem] flex items-center justify-center">
-        <TextHoverEffect text="FT.NESS" />
-      </div>
 
 
 
-      <section id="about" className="px-4 py-4 md:py-20 dark:text-slate-300">
+      <MemershipType />
+
+
+      <section id="about" className="px-4 lg:py-20 max-md:px-8 max-md:pt-20 dark:text-slate-300">
         <h2 className="text-center text-2xl font-bold  dark:text-slate-300 text-slate-700 lg:text-6xl">About Us</h2>
 
         <div className="mt-8 max-w-4xl mx-auto border-4 rounded-2xl p-4 border-neutral-200 dark:border-neutral-800 pb-8 shadow-lg shadow-blue-400 hover:shadow-2xl transition-shadow duration-300">
