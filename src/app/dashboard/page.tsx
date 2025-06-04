@@ -96,6 +96,28 @@ const DarshboardPage = () => {
 
             </div>
 
+            <section id="progress" className="w-full px-4 lg:py-20 max-md:px-8 max-md:pt-20 dark:text-slate-300">
+                <h2 className="text-4xl">Progress</h2>
+
+                <div className="mt-8 max-w-4xl mx-auto border-4 rounded-xl p-4 border-neutral-200 dark:border-neutral-800 pb-8 shadow-lg shadow-blue-400 hover:shadow-2xl transition-shadow duration-300">
+                    <p className="text-lg text-gray-700 dark:text-gray-300">Track your fitness journey with our comprehensive progress tracking tools. Monitor your workouts, nutrition, and overall health to achieve your fitness goals.</p>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Weekly Progress</h3>
+                        {/* Add progress chart or details here */}
+                    </div>
+
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Monthly Progress</h3>
+                        {/* Add progress chart or details here */}
+                    </div>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Yearly Progress</h3>
+                        {/* Add progress chart or details here */}
+                    </div>
+                </div>
+            </section>
+
+
 
             <Contact />
 
