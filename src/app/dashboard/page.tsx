@@ -6,7 +6,7 @@ const FitnessDashboardPage = () => {
     const user = {
         name: "John Doe",
         age: 45,
-        height: "6'1\"",
+        height: "6&apos;1\"",
         weight: "180 lbs",
         email: "johndoe22@gmail.com",
         image: "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
@@ -71,7 +71,7 @@ const FitnessDashboardPage = () => {
             <section id="progress" className="w-full px-4 py-20 dark:text-slate-300">
                 <h2 className="text-3xl font-bold text-center mb-4">Progress Overview</h2>
                 <p className="text-center text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-                    Here's a summary of your recent fitness activities and health progress. Keep it up!
+                    Here&apos;s a summary of your recent fitness activities and health progress. Keep it up!
                 </p>
 
                 <div className="mt-10 max-w-4xl mx-auto border-4 rounded-xl p-6 border-neutral-200 dark:border-neutral-800 shadow-lg space-y-8">
